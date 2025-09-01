@@ -20,6 +20,7 @@ dist-ssr
 coverage
 *.local
 .env
+.venv
 *.tsbuildinfo
 
 # rust
