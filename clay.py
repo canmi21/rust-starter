@@ -7,6 +7,7 @@ steps = [
     ("Clippy check", ["cargo", "clippy", "--all-targets", "--all-features", "--", "-D", "warnings"]),
     ("Git add", ["git", "add", "."]),
     ("Git commit", None),
+    ("Git push", ["git", "push"]),
 ]
 
 def run_step(name, cmd, index, total):
@@ -35,7 +36,7 @@ def main():
     total = len(steps)
     for i, (name, cmd) in enumerate(steps, start=1):
         run_step(name, cmd, i, total)
-    sys.stdout.write("\nAll checks passed!\n")
+    # sys.stdout.write("\nAll checks passed!\n")
 
 if __name__ == "__main__":
     main()
