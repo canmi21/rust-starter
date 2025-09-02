@@ -1,4 +1,4 @@
-// src/main.rs
+/* src/main.rs */
 
 use dotenvy::dotenv;
 use fancy_log::{LogLevel, log, set_log_level};
